@@ -5,9 +5,8 @@
 
    */
 
-   $name = 'LOLLIPOP:';
-   $price = 1;
-
+   $candyName = 'Jelly Bean';
+   $candyPrice = 5;
 ?>
 <!DOCTYPE html>
 <html>
@@ -19,8 +18,8 @@
 
 <body>
   <h1>The Candy Store</h1>
-  <h2>Welcome!</h2>
-  <p><?php echo $name; ?> The cost of your candy is €<?php echo $price  ?> per piece.</p>
+  <h2>Welcome to <?php echo $candyName; ?></h2>
+  <p>The cost of the candy per pack is € <?php echo $candyPrice; ?></p>
 </body>
 
 </html>
