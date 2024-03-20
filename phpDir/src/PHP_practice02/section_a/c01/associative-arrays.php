@@ -5,6 +5,8 @@
 
    */
 
+   $nutrition = array('fat'=>'24%', 'sugar'=>'40%', 'salt'=>'20%');
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -16,8 +18,11 @@
 
 <body>
   <h1>The Candy Store</h1>
-  <h2>Nutrition (per 100g)</h2>
-
+  <h2>Nutrition (per 100g)
+  <p>Fat contents: <?php echo $nutrition['fat'];?> 
+  <p>Sugar contents: <?php echo $nutrition['sugar'];?> 
+  <p>Salt contents: <?php echo $nutrition['salt'];?></p>
+</h2>
 </body>
 
 </html>
