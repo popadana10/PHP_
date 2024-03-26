@@ -18,5 +18,17 @@ Step 3: Otherwise, simply display the form
 
 */
 ?>
-
+<?php
+$sent = $_GET['sent'] ?? "" ;
+if($sent == 'search') {
+$term = $_GET['term'] ?? "";
+echo 'You searched for ' . htmlspecialchars($term);
+}else {
+?>
+<form action="check-for-http-get.php" method="GET" >
+Search for: <input type="search" name="term">
+<input type="submit" value="search" name="sent">
+</form>
+<?php include 'includes/footer.php'; ?>
+<?php } ?>
 <?php include 'includes/footer.php'; ?>
