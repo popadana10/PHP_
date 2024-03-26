@@ -1,6 +1,6 @@
 <?php
 // Write PHP code here
-
+declare(strict_types=1);
 ?>
 <?php include 'includes/header.php'; ?>
 
