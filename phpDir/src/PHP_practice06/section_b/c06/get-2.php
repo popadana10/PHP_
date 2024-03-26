@@ -19,9 +19,36 @@ Step 4:  If the value in the city is a blank string it should display
 "Please select a city"
 
 */
+?>
+<?php
+
+$cities = [
+    'London' => '48 Store Street, WC1E 7BS',
+    'Helsinki' => 'Kaivokatu 1, 00100 Helsinki',
+    'Sydney' => '1242 7th Street, 10492'
+];
+
+$city = $_GET['city']??'';
+
+if(!$city == '') {
+    $address = $cities[$city];
+} else {
+    $address = 'Please selet a city';
+}
 
 ?>
 
+<?php
+
+foreach($cities as $key => $value) { ?> 
+ <a href="get-2.php?city=<?= $key ?>"> <?= $key ?></a>
+<?php } ?>
+
+<p> 
+<?=
+!$city == '' ? "{$city} store address:<br> {address}" : $address;
+?>
+</p>
 
 //Write your code here
 
