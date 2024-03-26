@@ -22,5 +22,26 @@ Step 5: Check if condition is valid, if it is you can display
 <?php include 'includes/header.php'; ?>
 
 //Write PHP Code here
+<?php
+$age = '';
+$number = '';
+
+function is_number($number, int $min= 0, int $max = 100): bool {
+  return ($number >= $min and $number <= $max);
+};
+
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
+  $age = $_POST['age'];
+  $valid = is_number($age, 16, 65);
+
+  if ($valid) {
+    return print 'Age is valid';
+  } else {
+    print 'You must be 16-65';
+  }
+}
+
+?>
+
 
 <?php include 'includes/footer.php'; ?>
