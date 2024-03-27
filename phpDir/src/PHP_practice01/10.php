@@ -30,6 +30,24 @@ Step 6: Call the method ShowAll
 		
 	*/
 
+  class Dog {
+    public $eye_color;
+    public $nose;
+    public $fur_color;
+
+    function ShowAll() {
+        echo "Eye Color: " . $this->eye_color . "<br>";
+        echo "Nose: " . $this->nose . "<br>";
+        echo "Fur Color: " . $this->fur_color;
+    }
+}
+
+$pitbull = new Dog();
+$pitbull->eye_color = "Brown";
+$pitbull->nose = "Black";
+$pitbull->fur_color = "Brown and White";
+$pitbull->ShowAll();
+
 		?>
 
 
