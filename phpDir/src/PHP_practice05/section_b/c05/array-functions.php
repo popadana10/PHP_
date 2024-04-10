@@ -25,7 +25,7 @@ if(array_key_exists('forename', $customer)) {
 <?php include 'includes/header.php'; ?>
 
 <h1>Best Sellers</h1>
-<p><?= $greeting ?></p>
+<p><?= $greetings ?></p>
 <p>Our top <?= $bestsellers_count ?> items today are:
   <b><?= $bestsellers_text ?> </b>
 </p>

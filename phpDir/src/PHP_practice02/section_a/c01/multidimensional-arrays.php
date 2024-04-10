@@ -3,7 +3,7 @@
 /* 
   Write you php code here
 
-   */
+*/
 
 ?>
 <!DOCTYPE html>

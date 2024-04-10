@@ -7,46 +7,45 @@ declare(strict_types=1);
 include 'includes/header.php'; 
 ?>
  
-<?php
+<?php 
+
 
 // Step 2:  Create a class for account (with its properties e.g. number, type and balance)
-
-class Account {
+class Account 
+{
   public string $number;
   public string $type;
   public float $balance;
 
-// Step 3: Create a PHP constructor with argument types e.g. number, type and balance
-// If a balance is not given when creating the object, a default value of 0.00 should be used.
-
-public function __construct(string $number, string $type, float $balance = 0.00) {
+// Step 3: Create a PHP constructor with argument types e.g. number, type and balance If a balance is not given when creating the object, a default value of 0.00 should be used.
+public function __construct(string $number, string $type, float $balance = 0.00) 
+{
   $this->number = $number;
   $this->type = $type;
   $this->balance = $balance;
 }
 
 // Step 4: Create two methods for deposit and withdraw which will update the value stored in the balance property. They should be given arguments and return type declaration of float.
-
-public function deposit(float $amount) : float {
+public function deposit(float $amount): float
+{
   $this->balance += $amount;
   return $this->balance;
 }
 
-public function withdraw(float $amount) : float {
+public function withdraw(float $amount): float 
+{
   $this->balance -= $amount;
   return $this->balance;
 }
 }
-
 // Step 5: Create two objects to represent a checking account and savings account.
-$checking = new Account('12345', 'Checking');
-$savings = new Account('63463', 'Savings', 100000.00);
+$checking = new Account("12345", "Checking");
+$savings = new Account("06789", "Savings", 5000.00);
 
 /* Step 6:  An HTML skeleton is drawn. The first row should show headings using the type property of two objects. To access property use the:
  - Name of the variable that holds the object
  - Object operator
  - Property name */
-
  echo "<h2>Account Balances</h2>";
  echo "<table>";
  echo  "<tr>";
@@ -54,8 +53,8 @@ $savings = new Account('63463', 'Savings', 100000.00);
  echo "<th>Balance</th>";
  echo "<th>Date</th>";
  echo "</tr>";
-
- // Step 7: In the next table row show the balance property of the objects.
+ 
+// Step 7: In the next table row show the balance property of the objects.
 echo "<tr>";
 echo "<td>" .$checking->type ."</td>";
 echo "<td>" .$checking->deposit(1000.00). "</td>";
@@ -99,6 +98,10 @@ echo "</tr>";
 
 
 echo "</table>";
+
 ?>
 
-<?php include 'includes/footer.php'; ?>
+
+<?php 
+include 'includes/footer.php'; 
+?>

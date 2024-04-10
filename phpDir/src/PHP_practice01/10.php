@@ -25,9 +25,6 @@
 
 Step 6: Call the method ShowAll
 
-	
-
-		
 	*/
 
   class Dog {
@@ -48,7 +45,6 @@ $pitbull->nose = "Black";
 $pitbull->fur_color = "Brown and White";
 $pitbull->ShowAll();
 
-
 /*
 class Dog
 {
@@ -64,20 +60,8 @@ class Dog
 
 }
 $shaperd = new Dog('black', 'black', 'brown');
-
-public function __construct($eyeColor, $nose, $furColor)
-{
-  $this->eye_color = $eye_color;
-  $this->nose = $nose;
-  $this->fur_color = $fur_color;
-}
-
-public function ShowAll()
-{
-  echo "Eye Color: $this->eye_color, Nose: $this->nose, Fur Color: $this->fur_color";
-}
 */
-		?>
+?>
 
 
 

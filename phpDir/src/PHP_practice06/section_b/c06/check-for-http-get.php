@@ -31,4 +31,5 @@ Search for: <input type="search" name="term">
 </form>
 <?php include 'includes/footer.php'; ?>
 <?php } ?>
+
 <?php include 'includes/footer.php'; ?>

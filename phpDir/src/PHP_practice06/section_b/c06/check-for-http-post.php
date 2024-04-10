@@ -20,6 +20,7 @@ Your email address is: <?php echo $_GET["email"]; ?>
 
 ?>
 
+
 <?php
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -36,7 +37,4 @@ else { ?>
 
 <?php include 'includes/footer.php'; ?>
 
-<?php }
-?>
-
-<?php include 'includes/footer.php'; ?>
+<?php } ?>
